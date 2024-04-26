@@ -1,150 +1,189 @@
-
-
 <div class="main-container">
-    <div class ="nav">
-     
-        <img src="assets/logo3.png" alt="Logo" width="200px" height="100%"  >
-        <ul>
-          <li><a href="http://www.google.com" target="_blank">Home</a></li>
-          <li><a href="http://www.google.com">Events</a></li>
-          <li><a href="http://www.google.com">News</a></li>
-          <li><a href="http://www.google.com">Donate</a></li>
-          <li><a routerLink="/about">About</a></li>
-      </ul>
-      
-      <div class="search">
-        <input type="text" placeholder="Search...">
-        <i class="fas fa-search"></i>
-     </div>
-     <div class="nav-pic">
-      
-      
-      
+  <div class="nav">
+    <img src="assets/logo3.png" alt="Logo" width="200px" height="50px" />
+    <ul>
+      <li><a href="http://www.google.com" target="_blank">Home</a></li>
+      <li><a href="http://www.google.com">Events</a></li>
+      <li><a href="http://www.google.com">News</a></li>
+      <li><a href="http://www.google.com">Donate</a></li>
+      <li><a (click)="navigateToAbout()">About</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Search..." />
+      <i class="fas fa-search"></i>
     </div>
+    <div class="nav-pic"></div>
+  </div>
+
+  <section
+    class="content"
+    style="
+      background-image: url(assets/display.jpeg);
+      background-size: 100% 100%;
+    "
+  >
+    <div>
+      <h1
+        style="
+          text-align: center;
+          color: white;
+          padding-top: 170px;
+          font-size: 50px;
+          font-weight: 1200px;
+        "
+      >
+        Join Us In Our Mission
+      </h1>
+      <h1 style="text-align: center; color: white; font-size: 35px">
+        To Empower
+      </h1>
+      <h1 style="text-align: center; color: white; font-size: 45px">
+        Youth Through Sports!
+      </h1>
     </div>
-    
-    <section class="content" style="background-image: url(assets/display.jpeg);background-size:100% 100%;">
-      <div>
-        <h1 style="text-align: center;color:white;
-        padding-top: 170px;font-size: 50px;font-weight: 1200px;
-        "> 
-         Join Us In Our Mission</h1>
-          <h1 style="text-align: center;color:white;font-size: 35px;"> To Empower </h1>
-          <h1 style="text-align: center;color:white;font-size: 45px;">Youth Through Sports!</h1>
-      </div>
-    </section>
-    <section class="top">
-     
-      <div class="image-container">
-        <img src="assets/football.jpeg" alt="Image 1" class="image-base">
-        <img src="assets/pic4.jpg" alt="Image 2" class="image-overlay">
-      </div> 
-      <div style="background-color: rgb(221, 220, 218);border-radius: 20px;padding:20px;" >
-        <h1 style="font-size:50px;color:rgb(10, 10, 10)">Purpose</h1>
-        <p style="font-size: 20px;padding-right: 20px;color:black;margin-left:8px;">Paramount Sports Group is a dynamic organisation dedicated to the development of youth in sports, with 
-          primary focus on football(soccer).Founded with a vision to nurture talent and foster a love for sports among
-        young athlets.Paramount Sports Group is committed to bringing together soccer legends to inspire and mentor 
-      the next generation of athletes.   </p> 
-      <button style="border-radius: 20px;background-color: rgb(204, 196, 79);
-      color:white;font-size: 20px;
-      width: 160px ;height:53px;padding-bottom:5px;">
-        About Us</button>
-        </div> 
-        <div>
-         
-          </div>  
-    </section>
-    <section  class="middle">
-      <div id= "mission" class>
-      
+  </section>
+  <section class="top">
+    <div class="image-container">
+      <img src="assets/football.jpeg" alt="Image 1" class="image-base" />
+      <img src="assets/pic4.jpg" alt="Image 2" class="image-overlay" />
+    </div>
+    <div
+      style="
+        background-color: rgb(221, 220, 218);
+        border-radius: 20px;
+        padding: 20px;
+      "
+    >
+      <h1 style="font-size: 50px; color: rgb(10, 10, 10)">Purpose</h1>
+      <p
+        style="
+          font-size: 20px;
+          padding-right: 20px;
+          color: black;
+          margin-left: 8px;
+        "
+      >
+        Paramount Sports Group is a dynamic organisation dedicated to the
+        development of youth in sports, with primary focus on
+        football(soccer).Founded with a vision to nurture talent and foster a
+        love for sports among young athlets.Paramount Sports Group is committed
+        to bringing together soccer legends to inspire and mentor the next
+        generation of athletes.
+      </p>
+      <button class="about-btn" (click)="navigateToAbout()">About Us</button>
+    </div>
+    <div></div>
+  </section>
+  <section class="middle">
+    <div id="mission" class>
+      <marquee
+        class="marq"
+        style="background-color: lightsalmon"
+        direction="left"
+        loop=""
+      >
         <h1>Paramount Sports Group</h1>
-        <h1>Our Foundation</h1>
-        <div class="container">
-          <div class="column">
-            <img src="assets/pic1.jpg" alt="Soocer">
-            <div>
-              <h1>Events</h1>
-              <p>Upcoming Events</p>
-              <h3 style="color:white;"><u>Read More</u></h3>
-            </div>
-          </div>
-          <div class="column">
-            <img src="assets/pic2.jpg" alt="Soocer">
-            <div>
-              <h1>News</h1>
-            </div>
-          </div>
-          <div class="column">
-            <img src="assets/pic3.jpg" alt="Soocer">
-            <div>
-              <h1>About Us</h1>
-            </div>
+      </marquee>
+      <h1>Our Foundation</h1>
+
+      <div class="container">
+        <div class="column">
+          <img src="assets/pic1.jpg" alt="Soocer" />
+          <div>
+            <h1>Events</h1>
+            <p>Upcoming Events</p>
+            <h3 style="color: white"><u>Read More</u></h3>
           </div>
         </div>
-    
+        <div class="column">
+          <img src="assets/pic2.jpg" alt="Soocer" />
+          <div>
+            <h1>News</h1>
+          </div>
+        </div>
+        <div class="column">
+          <img src="assets/pic3.jpg" alt="Soocer" />
+          <div>
+            <h1>About Us</h1>
+          </div>
+        </div>
       </div>
-    </section>
-    <section  class = "responsive-section"style="background-image: url(assets/pic4.jpg);">
-      
-      <div>
-        <h1 style="text-align: center;color:rgb(34, 36, 37);
-        padding-top: 10px;font-size: 50px;font-weight: 1200px;
-        "> 
-         Join Us In Our Mission</h1>
-          <h1 style="text-align: center;color:rgb(46, 60, 66);font-size: 35px;"> To Empower </h1>
-          <h1 style="text-align: center;color:rgb(41, 38, 38);font-size: 45px;">Youth Through Sports!</h1>
-      </div>
-     
-    </section>
-    <section class="last">
-    
-      <div>
-      <h1 style="font-size: 50px;font-weight: 900;padding-left: 20px;">News & Articles</h1>
+    </div>
+  </section>
+  <section
+    class="responsive-section"
+    style="background-image: url(assets/pic4.jpg)"
+  >
+    <div>
+      <h1
+        style="
+          text-align: center;
+          color: rgb(34, 36, 37);
+          padding-top: 10px;
+          font-size: 50px;
+          font-weight: 1200px;
+        "
+      >
+        Join Us In Our Mission
+      </h1>
+      <h1 style="text-align: center; color: rgb(46, 60, 66); font-size: 35px">
+        To Empower
+      </h1>
+      <h1 style="text-align: center; color: rgb(41, 38, 38); font-size: 45px">
+        Youth Through Sports!
+      </h1>
+    </div>
+  </section>
+  <section class="last">
+    <div>
+      <h1 style="font-size: 50px; font-weight: 900; padding-left: 20px">
+        News & Articles
+      </h1>
     </div>
     <div class="last-container">
       <div class="column">
+        <img src="assets/pic2.jpg" alt="Soocer" />
         <h1>Column 1 Title</h1>
         <p>This is the content for the first column.</p>
       </div>
       <div class="column">
+        <img src="assets/pic1.jpg" alt="Soocer" />
         <h2>Column 2 Title</h2>
         <p>This is the content for the second column.</p>
       </div>
       <div class="column">
-        <img src="assets/pic3.jpg" alt="Soocer">
+        <img src="assets/pic3.jpg" alt="Soocer" />
         <div>
           <h1>About Us</h1>
         </div>
         <h2>Column 3 Title</h2>
         <p>This is the content for the third column.</p>
       </div>
-     
-     </div>
-    </section>
-    
-    <footer>
-      <div class="footer-overall">
-        <div class="footer-column">
-          <h1>About Us</h1>
-          <p>Paramount Sports Group<br>Sports</p>
-          <p>Please connect with us</p>
-        </div>
-        <div class="footer-column">
-          <h1>Get In Touch</h1>
-          <p>Hellooo World</p>
-          <p>Perfect</p>
-        </div>
-        <div class="footer-column">
-          <h1>Links</h1>
-          <p> we are </p>
-          <p>happy</p>
-        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-overall">
+      <div class="footer-column">
+        <h1>About Us</h1>
+        <p>Paramount Sports Group<br />Sports</p>
+        <p>Please connect with us</p>
       </div>
-      <div class="horizontal-line">
-        liuh feiuhlgfiuh ljhfvalkjhb bufvruhg rqjgkvrwhg bvgiuofv bhhir
+      <div class="footer-column">
+        <h1>Get In Touch</h1>
+        <p>Hellooo World</p>
+        <p>Perfect</p>
       </div>
-    </footer>
+      <div class="footer-column">
+        <h1>Links</h1>
+        <p>we are</p>
+        <p>happy</p>
       </div>
-    
-    
-    
+    </div>
+    <div class="horizontal-line">
+      liuh feiuhlgfiuh ljhfvalkjhb bufvruhg rqjgkvrwhg bvgiuofv bhhir
+    </div>
+  </footer>
+  -->
+</div>
