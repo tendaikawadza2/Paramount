@@ -1,0 +1,251 @@
+
+
+.nav {
+    background-color: black;
+    
+    color: white;
+    height: 140px;
+    display: flex; /* Make .nav a flex container */
+    justify-content: space-between; /* Distribute elements with space */
+    align-items: center; /* Align items to the center vertically */
+    margin-bottom: 0; /* Ensure no margin below the nav */
+    position: fixed;
+    width: 100%;
+  }
+  
+  .nav ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Make the list items inline within the flexbox */
+  }
+  
+  .nav li {
+    text-align: left;
+    text-decoration: none;
+    margin-right: 10px; /* Adjust as needed */
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: yellow;
+    border-radius: 10px;
+  }
+  
+  a:active {
+    color: blue;
+  }
+  
+  .search {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+    margin-top: 20px;
+  }
+  
+  .search input {
+    padding: 5px 22px 5px 2px; /* Adjust padding to accommodate the icon */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .nav-pic {
+    justify-content: flex-start; /* Align the logo to the left */
+    position: absolute;
+    padding-left: 10px; /* Add some padding for spacing */
+  }
+  
+  .fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .top {
+      background-color: rgb(221, 209, 209);
+      height:550px;
+      display:grid;
+      grid-template-columns: repeat(2, 1fr); 
+      padding-top: 0px;
+     
+  
+  }
+  .content{
+      height:500px;
+      
+  }
+  footer {
+      color: rgb(22, 22, 24);
+      background-color: rgb(214, 207, 101);
+    }
+    
+    .footer-overall {
+      color: white;
+      display: flex;  /* Use flexbox for responsive layout */
+      flex-wrap: wrap;  /* Allow columns to wrap on smaller screens */
+      justify-content: space-between; /* Distribute columns evenly */
+      padding: 20px; /* Add some padding for better look */
+    }
+    
+    .footer-column {
+      margin: 10px;  /* Reduce margin for better spacing on smaller screens */
+      padding: 10px;
+      text-align: center;  /* Optional: Center content horizontally */
+    }
+    
+    /* Media queries for responsive adjustments */
+    @media (max-width: 768px) {
+      .footer-overall {
+        grid-template-columns: 1fr;  /* Switch to single column on tablets */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .footer-column {
+        font-size: 16px;  /* Adjust font size for smaller screens */
+      }
+    }
+    
+    
+  .horizontal-line {
+      border-top: 5px solid #cfc2c2; /* Set line style, thickness, and color */
+      margin-left: 40px;
+      margin-right: 40px;
+      
+    }
+    .content background-image{
+     size: 100% 100%;
+     
+    }
+    .container {
+      display: flex; /* Ensures flexbox layout for columns */
+      flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+      margin: 0 auto;
+      width: 80%; /* Adjust width as needed */
+    }
+    
+    /* Style each column */
+    .column {
+      flex: 1 0 33.33%; /* Sets width to 1/3rd */
+      padding: 10px;
+      box-sizing: border-box; /* Ensures padding doesn't affect width */
+      text-align: center; /* Optional: Center content horizontally */
+      transition: background-color 0.3s ease; /* Smooth background color change */
+      cursor: pointer; /* Indicate hover interaction */
+    }
+    
+    /* Change background color on hover */
+    .column:hover {
+      background-color: rgb(146, 91, 7); /* Light yellow hover color */
+    }
+    
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .column {
+        flex: 1 0 50%; /* Adjust width to 1/2 on small screens */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .column {
+        flex: 1 0 100%; /* Stack columns on extra small screens */
+      }
+    }
+    
+    /* Column image (`.column img`):*/
+    .column img {
+      height: 300px;
+      width: 280px;
+    }
+    .responsive-section {
+      background-color: #f0f0f0;  /* Optional background color */
+      height: 400px;
+     
+      
+    }
+    
+    /* Media queries for responsive adjustments (optional) */
+    @media (max-width: 768px) {
+      .responsive-section {
+        padding: 10px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .responsive-section {
+        font-size: 16px;  /* Adjust font size for smaller screens */
+      }
+    }
+    
+    /* Prevent overlapping with other sections */
+    body {
+      display: flex;
+      flex-direction: column;  /* Stack elements vertically */
+    }
+  
+    .main-container {
+      width: 100%; /* Adjust width as needed */
+      margin: 0 auto; /* Center horizontally */
+      padding: 0px; /* Add some padding for better look */
+    }
+    .last {
+      display: flex; /* Makes the columns sit side-by-side */
+      flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    }
+    
+    .column {
+      flex: 1; /* Makes columns share the available space equally */
+      padding: 1rem; /* Adds some space around the content */
+      text-align: center; /* Centers the content within the column */
+      padding: 20px;
+    }
+    
+    /* Media queries for responsiveness */
+    
+    @media (max-width: 768px) {
+      .column {
+        flex: 100%; /* Makes columns stack on top of each other on small screens */
+      }
+    }
+    .last-container {
+      display: flex; /* Ensures flexbox layout for columns */
+      flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+      margin: 0 auto;
+      width: 95%; /* Adjust width as needed */
+      
+    }
+    .image-container {
+    position: relative; /* Makes the container the reference point */
+  }
+  
+  .image-base {
+    width: 75%; /* Fills the container width */
+    height: auto; /* Maintains aspect ratio */
+    padding-left:100px;
+    padding-top: 120px;
+  }
+  
+  .image-overlay {
+    position: absolute; /* Overlaps the base image */
+    top: 0; /* Positions at the top */
+    left: 0; /* Positions at the left */
+    width: 60%; /* Adjust for desired overlap size */
+    height: 60%; /* Maintains aspect ratio */
+    padding-left: 20px;
+    padding-top: 25px;
+  }
+  
+  
