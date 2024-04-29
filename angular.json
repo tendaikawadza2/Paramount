@@ -20,9 +20,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.css",
-              "https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
-            ],
+              "src/styles.css"            ],
             "scripts": []
           },
           "configurations": {
